@@ -1,0 +1,196 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(24, 61, 61);
+    color: rgb(147, 177, 166);
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    background-color: rgb(4, 13, 18);
+    color: rgb(92, 131, 116);
+    text-align: center;
+    padding: 1em;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.section-1 {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: rgb(24, 61, 61);
+    position: relative;
+}
+
+.section-1 h1 {
+    font-size: 2.5em;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-in forwards;
+}
+
+.section-1 p {
+    font-size: 1.2em;
+    color: rgb(82, 118, 105);
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-in forwards;
+}
+
+.btn-1 {
+    padding: 10px 20px;
+    background-color: rgb(25, 74, 55);
+    color: rgb(147, 177, 166);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeInUp 2s ease-in forwards;
+}
+
+.btn-1:hover {
+    background-color: rgb(32, 83, 64);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+.section-1-img {
+    width: 25em;
+    border-radius: 5%;
+    height: 15em;
+    opacity: 0;
+    animation: fadeIn 1.2s ease-in forwards;
+}
+
+/* Features Section */
+.section-2 {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgb(24, 61, 61);
+}
+
+.section-2 h2 {
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+.section-2-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: rgb(147, 177, 166);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-in forwards;
+}
+
+.box img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 1.1em;
+    color: rgb(82, 118, 105);
+}
+
+/* Testimonials Section */
+.section-3 {
+    padding: 50px 20px;
+    background-color: rgb(24, 61, 61);
+    text-align: center;
+}
+
+.section-3-boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.reviews {
+    background-color: rgb(147, 177, 166);
+    color: rgb(82, 118, 105);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeInUp 2s ease-in forwards;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(4, 13, 18);
+    color: rgb(147, 177, 166);
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .section-1 h1 {
+        font-size: 1.8em;
+    }
+
+    .btn-1 {
+        padding: 12px 30px;
+    }
+
+    .box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-1 {
+        padding: 60px 10px;
+    }
+
+    .section-1 p {
+        font-size: 1em;
+    }
+
+    .reviews {
+        padding: 15px;
+    }
+}
