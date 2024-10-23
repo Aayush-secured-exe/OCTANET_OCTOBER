@@ -20,6 +20,6 @@ This repository contains the landing page created as part of the internship task
 ## How to View the Project
 
 To view the landing page, you can visit the live site hosted on GitHub Pages:
-[Landing Page - OctaNet Services Pvt Ltd](https://your-github-username.github.io/your-repo-name)
+[Landing Page - OctaNet Services Pvt Ltd](https://github.com/Aayush-secured-exe/OCTANET_OCTOBER)
 
 Alternatively, you can clone this repository and open the `task1.html` file in your browser:
